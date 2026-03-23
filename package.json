@@ -1,0 +1,25 @@
+{
+  "name": "gor-om-mig",
+  "version": "1.0.0",
+  "description": "Make a web page with dated styling/layout more modern and UX/UI friendly",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src:dist --no-source-map --style=expanded",
+    "watch": "sass src:dist --watch --style=expanded"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannakinnander/gor-om-mig.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hannakinnander/gor-om-mig/issues"
+  },
+  "homepage": "https://github.com/hannakinnander/gor-om-mig#readme",
+  "dependencies": {
+    "sass": "^1.98.0"
+  }
+}
