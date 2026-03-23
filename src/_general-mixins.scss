@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gabarito", "Arial", sans-serif;
+}
+
+@mixin make-flex {
+    display: flex;
+}
+
+@mixin make-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
