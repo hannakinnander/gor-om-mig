@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(4, 12, 124);
 }
 
 header {
@@ -18,8 +19,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-left: 2px solid rgb(4, 12, 124);
-  border-right: 2px solid rgb(4, 12, 124);
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
 .contact-information {
@@ -87,6 +88,7 @@ header {
   width: 90px;
   padding-left: 5px;
   padding-right: 5px;
+  background-color: rgb(254, 255, 243);
 }
 .header-menu button a {
   font-size: 1rem;
@@ -98,6 +100,7 @@ header {
 .header-menu .search input {
   border: none;
   border-radius: 5px;
+  background-color: rgb(254, 255, 243);
   font-size: 1rem;
   height: 30px;
   width: 300px;
@@ -106,7 +109,6 @@ header {
   border: none;
   border-radius: 5px;
   color: rgb(4, 12, 124);
-  background-color: white;
   width: fit-content;
   height: 30px;
 }
@@ -115,15 +117,24 @@ header {
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-left: 2px solid rgb(4, 12, 124);
-  border-right: 2px solid rgb(4, 12, 124);
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   max-width: 1300px;
   padding-top: 1rem;
+  justify-content: space-between;
+  background-color: rgb(206, 238, 176);
 }
 
 .product-menu {
-  background-color: rgb(206, 238, 176);
-  width: 30%;
+  background-color: #f3962b;
+  border: none;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+.product-menu h2 {
+  color: rgb(4, 12, 124);
 }
 .product-menu li {
   list-style: none;
@@ -137,7 +148,7 @@ header {
   color: rgb(4, 12, 124);
 }
 .product-menu a:hover {
-  background-color: #f3962b;
+  background-color: white;
   padding: 3px;
   border: none;
   border-radius: 5px;
@@ -153,16 +164,31 @@ header {
 .product-menu .dropdown-content li {
   margin-top: 5px;
 }
-
-.dropdown:hover .dropdown-content {
+.product-menu .dropdown:hover .dropdown-content {
   display: block;
 }
 
-article {
+main {
+  flex: 1;
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+article {
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex-wrap: wrap;
   padding: 2rem;
+  background-color: yellow;
+}
+article img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,8 +8,8 @@
 }
 
 @mixin sideborder {
-    border-left: 2px solid $blue-color;
-    border-right: 2px solid $blue-color;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 @mixin make-flex {
