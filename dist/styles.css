@@ -8,7 +8,6 @@
 body {
   display: flex;
   flex-direction: column;
-  max-width: 100dvw;
   align-items: center;
 }
 
@@ -19,6 +18,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-left: 2px solid rgb(4, 12, 124);
+  border-right: 2px solid rgb(4, 12, 124);
 }
 
 .contact-information {
@@ -108,6 +109,60 @@ header {
   background-color: white;
   width: fit-content;
   height: 30px;
+}
+
+.main-content {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-left: 2px solid rgb(4, 12, 124);
+  border-right: 2px solid rgb(4, 12, 124);
+  max-width: 1300px;
+  padding-top: 1rem;
+}
+
+.product-menu {
+  background-color: rgb(206, 238, 176);
+  width: 30%;
+}
+.product-menu li {
+  list-style: none;
+  margin-top: 10px;
+}
+.product-menu li:hover {
+  transform: translateY(-2px);
+}
+.product-menu a {
+  text-decoration: none;
+  color: rgb(4, 12, 124);
+}
+.product-menu a:hover {
+  background-color: #f3962b;
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+}
+.product-menu .category-name {
+  font-size: 22px;
+}
+.product-menu .dropdown-content {
+  font-size: 1rem;
+  list-style: none;
+  display: none;
+}
+.product-menu .dropdown-content li {
+  margin-top: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+article {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

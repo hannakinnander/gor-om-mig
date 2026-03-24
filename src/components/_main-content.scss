@@ -1,0 +1,53 @@
+@use "../general-mixins.scss" as *;
+@use "../variables" as *;
+
+.main-content {
+    @include make-flex;
+    @include sideborder;
+    max-width: 1300px;
+    padding-top: 1rem;
+}
+
+.product-menu {
+    background-color: $green-color;
+    width: 30%;
+    li {
+        list-style: none;
+        margin-top: 10px;
+    }
+    li:hover {
+        transform: translateY(-2px);
+    }
+    a {
+        text-decoration: none;
+        color: $blue-color;
+    }
+    a:hover {
+        background-color: $orange-color;
+        padding: 3px;
+        @include border;
+    }
+    .category-name {
+        font-size: 22px;
+    }
+
+    .dropdown-content {
+        font-size: 1rem;
+        list-style: none;
+        display: none;
+        li {
+        margin-top: 5px;
+    }
+    }
+
+    }
+    .dropdown:hover {
+        .dropdown-content{
+            display: block;
+        }
+    }
+
+article {
+    @include make-flex;
+    padding: 2rem;
+}

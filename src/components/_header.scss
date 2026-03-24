@@ -3,7 +3,6 @@
 
 body {
     @include make-flex-column;
-    max-width: 100dvw;
     align-items: center;
 }
 
@@ -13,7 +12,7 @@ header {
     height: 180px;
     @include make-flex-column;
     justify-content: space-between;
-
+    @include sideborder;
 }
 
 .contact-information {
