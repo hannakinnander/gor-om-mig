@@ -8,13 +8,15 @@ body {
 }
 
 header {
+    max-width: 1300px;
+    @include make-flex-column;
+    @include sideborder;
+}
+.header-img {
+    @include make-flex-column;
     background-image: url('/img/header-1300x160.jpg');
     background-repeat: no-repeat;
-    max-width: 1300px;
-    height: 190px;
-    @include make-flex-column;
-    justify-content: space-between;
-    @include sideborder;
+    height: 160px;
 }
 
 .contact-information {
@@ -26,7 +28,6 @@ header {
     padding: 4px;
     width: fit-content;
     font-size: small;
-    flex-wrap: wrap;
     gap: 4px;
 
     a {
@@ -38,11 +39,9 @@ header {
 }
 .logo-and-slogan-div {
     @include make-flex;
-    justify-content: space-between;
-    flex: 1;
+    gap: 2rem;
     margin-top: 5px;
     h1 {
-        // background-color: $blue-color;
         color: $orange-color;
         text-shadow: 2px 2px 3px rgb(46, 46, 46);
         height: fit-content;
@@ -51,7 +50,7 @@ header {
         font-weight: 700;
     }
     .slogan-div {
-        flex: 1;
+         flex: 1;
         .slogan {
             font-size: clamp(1rem, 2vw, 20px);
             text-align: end;
@@ -65,7 +64,6 @@ header {
     max-width: 1300px;
     @include make-flex;
     justify-content: space-between;
-    // gap: 1rem;
     align-items: center;
     background-color: $grey-color;
     .header-menu-links {

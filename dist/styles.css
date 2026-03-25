@@ -13,15 +13,19 @@ body {
 }
 
 header {
-  background-image: url("/img/header-1300x160.jpg");
-  background-repeat: no-repeat;
   max-width: 1300px;
-  height: 190px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-left: 2px solid rgb(4, 12, 124);
   border-right: 2px solid rgb(4, 12, 124);
+}
+
+.header-img {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/img/header-1300x160.jpg");
+  background-repeat: no-repeat;
+  height: 160px;
 }
 
 .contact-information {
@@ -36,7 +40,6 @@ header {
   padding: 4px;
   width: fit-content;
   font-size: small;
-  flex-wrap: wrap;
   gap: 4px;
 }
 .contact-information a {
@@ -50,8 +53,7 @@ header {
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
-  justify-content: space-between;
-  flex: 1;
+  gap: 2rem;
   margin-top: 5px;
 }
 .logo-and-slogan-div h1 {
