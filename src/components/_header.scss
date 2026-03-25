@@ -1,0 +1,108 @@
+@use "../general-mixins.scss" as *;
+@use "../variables" as *;
+
+body {
+    @include make-flex-column;
+    align-items: center;
+}
+
+header {
+    background-image: url('/img/header-1300x160.jpg');
+    max-width: 1300px;
+    height: 190px;
+    @include make-flex-column;
+    justify-content: space-between;
+    @include sideborder;
+}
+
+.contact-information {
+    @include make-flex;
+    @include rounded-no-border;
+    align-self: flex-end;
+    background-color: $blue-color-transparent;
+    color: white;
+    padding: 4px;
+    width: fit-content;
+    font-size: small;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    a {
+        color: white;
+    }
+    a:hover {
+        color: $orange-color;
+    }
+}
+.logo-and-slogan-div {
+    @include make-flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 5px;
+    h1 {
+        // background-color: $blue-color;
+        color: $orange-color;
+        text-shadow: 2px 2px 3px rgb(46, 46, 46);
+        height: fit-content;
+        width: fit-content;
+        font-size: clamp(1.2rem, 3vw, 40px);
+        font-weight: 700;
+    }
+    .slogan-div {
+        width: 70%;
+        .slogan {
+            font-size: clamp(1rem, 2vw, 20px);
+            text-align: end;
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+}
+.header-menu {
+    height: 50px;
+    max-width: 1300px;
+    @include make-flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    background-color: $grey-color;
+
+    a {
+        color: $blue-color;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover {
+        scale: 1.1;
+    }
+    }
+    .search {
+        flex: 1;
+        max-width: 400px;
+        @include rounded-blue-border;
+        @include make-flex;
+        justify-content: space-between;
+        background-color: white;
+        input {
+            @include rounded-no-border;
+            flex: 1;
+            outline: none;
+            background-color: white;
+            font-size: 1rem;
+        }
+        button {
+            @include rounded-no-border;
+            color: $blue-color;
+            background-color: white;
+            width: fit-content;
+            height: 30px;
+        }
+        button:hover {
+            cursor: pointer;
+            color: $orange-color;
+        }
+    }
+    .search:hover {
+        transform: translateY(-1px);
+    }

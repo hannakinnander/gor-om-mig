@@ -1,0 +1,14 @@
+@use "./general-mixins" as *;
+@use "./variables" as *;
+
+@media (max-width: 1400px) {
+    article {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .all-products {
+        display: none;
+    }
+}

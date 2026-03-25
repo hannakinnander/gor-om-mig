@@ -1,0 +1,97 @@
+@use "../general-mixins.scss" as *;
+@use "../variables" as *;
+
+.main-content {
+    @include make-flex;
+    @include sideborder;
+    max-width: 1300px;
+    padding-top: 1rem;
+    justify-content: space-between;
+    background-color: $grey-color;
+}
+
+.product-menu {
+    
+    @include rounded-blue-border;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    flex: 1;
+    h2 {
+        color: $blue-color;
+    }
+    li {
+        list-style: none;
+        margin-top: 10px;
+    }
+    li:hover {
+        transform: translateY(-2px);
+    }
+    a {
+        text-decoration: none;
+        color: $blue-color;
+    }
+    a:hover {
+        background-color: $orange-color;
+        padding: 3px;
+        @include rounded-no-border;
+    }
+    .category-name {
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        font-style: italic;
+        font-size: 1rem;
+        list-style: none;
+        display: none;
+        li {
+        margin-top: 5px;
+    }
+   
+    }
+    .dropdown:hover {
+        .dropdown-content{
+            display: block;
+        }
+    }
+}
+main {
+    flex: 4;
+    @include make-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+article {
+    @include rounded-no-border;
+    @include make-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: white;
+ .text-content {
+
+    h3 {
+        font-size: 30px;
+    }
+    flex:1;
+    @include make-flex-column;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        color: $orange-color;
+    }
+ }
+ .img-div {
+    flex: 1;
+    @include rounded-blue-border;
+     img {
+        width: 100%;
+        height: auto;
+        
+    }
+ }
+
+}
