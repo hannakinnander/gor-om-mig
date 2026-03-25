@@ -176,8 +176,6 @@ header {
   padding-right: 1rem;
   gap: 1rem;
   max-width: 1300px;
-  min-height: 100dvh;
-  padding-top: 1rem;
 }
 
 .product-menu {
@@ -234,10 +232,27 @@ main {
   padding-right: 1rem;
   border: none;
   border-radius: 5px;
+}
+.article-type1 h3 {
+  font-size: 30px;
+}
+.article-type1 a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f3962b;
+}
+.article-type1 img {
+  border: 1px solid rgb(4, 12, 124);
+  border-radius: 5px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.article-type1 {
   padding: 2rem;
   margin-bottom: 1rem;
   gap: 1rem;
   background-color: white;
+  max-width: 70%;
   height: fit-content;
   justify-content: space-between;
 }
@@ -250,16 +265,31 @@ main {
   flex-direction: column;
   border: none;
   border-radius: 5px;
+}
+.article-type2 h3 {
+  font-size: 30px;
+}
+.article-type2 a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f3962b;
+}
+.article-type2 img {
+  border: 1px solid rgb(4, 12, 124);
+  border-radius: 5px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.article-type2 {
   padding: 2rem;
   margin-bottom: 1rem;
   gap: 1rem;
   background-color: white;
+  max-width: 70%;
   height: fit-content;
 }
 .article-type2 img {
   max-width: 33%;
-  border: 1px solid rgb(4, 12, 124);
-  border-radius: 5px;
 }
 
 .article-type3 {
@@ -268,35 +298,37 @@ main {
   padding-right: 1rem;
   border: none;
   border-radius: 5px;
+}
+.article-type3 h3 {
+  font-size: 30px;
+}
+.article-type3 a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f3962b;
+}
+.article-type3 img {
+  border: 1px solid rgb(4, 12, 124);
+  border-radius: 5px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.article-type3 {
   padding: 2rem;
   margin-bottom: 1rem;
   gap: 1rem;
   background-color: white;
+  max-width: 70%;
   height: fit-content;
-}
-.article-type3 .text-content h3 {
-  font-size: 30px;
 }
 .article-type3 .text-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex: 3;
+}
+.article-type3 img {
   flex: 2;
-}
-.article-type3 .text-content a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #f3962b;
-}
-.article-type3 .img-div {
-  flex: 1;
-  aspect-ratio: 16/9;
-  overflow: hidden;
-}
-.article-type3 .img-div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 @media (max-width: 1100px) {
