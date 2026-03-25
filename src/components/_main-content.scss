@@ -1,6 +1,9 @@
 @use "../general-mixins.scss" as *;
-@use "../variables" as *;
+@use "../variables.scss" as *;
 
+.checked-words {
+    justify-self: center;
+}
 .main-content {
     @include make-flex;
     gap: 1rem;
@@ -12,11 +15,11 @@
 }
 
 .product-menu {
+    background-color: white;
     @include rounded-blue-border;
     width: 250px;
     height: fit-content;
     padding: 1rem;
-    // flex: 1;
     h2 {
         color: $blue-color;
     }
@@ -58,14 +61,39 @@
 main {
     flex: 1;
 }
-article {
-    @include rounded-no-border;
+.checked-words {
     @include make-flex;
-    padding: 2rem;
+    gap: 2rem;
+    justify-self: center;
+    font-size: 2vw;
+    font-style: italic;
     margin-bottom: 1rem;
-    gap: 1rem;
-    background-color: white;
-    height: fit-content;
+}
+.article-type1 {
+    @include make-flex;
+    @include article-base;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 24px;
+    }
+
+}
+
+.article-type2 {
+    @include make-flex-column;
+    @include article-base;
+
+    img {
+        max-width: 33%;
+        @include rounded-blue-border;
+    }
+}
+
+.article-type3 {
+    @include make-flex;
+    @include article-base;
+
  .text-content {
     h3 {
         font-size: 30px;
@@ -83,7 +111,6 @@ article {
 
  .img-div {
     flex: 1;
-    @include rounded-blue-border;
     aspect-ratio: 16 / 9;
     overflow: hidden;
      img {

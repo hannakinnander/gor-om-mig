@@ -21,7 +21,6 @@
 @mixin make-flex-column {
     display: flex;
     flex-direction: column;
-
 }
 
 @mixin rounded-no-border {
@@ -34,6 +33,13 @@
     border-radius: 5px;
 }
 
-
+@mixin article-base {
+    @include rounded-no-border;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    background-color: white;
+    height: fit-content;
+}
 
 

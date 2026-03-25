@@ -23,6 +23,7 @@ header {
     @include make-flex;
     @include rounded-no-border;
     align-self: flex-end;
+    flex-wrap: wrap;
     background-color: $blue-color-transparent;
     color: white;
     padding: 4px;
@@ -40,13 +41,14 @@ header {
 .logo-and-slogan-div {
     @include make-flex;
     gap: 2rem;
-    margin-top: 5px;
+    height: 160px;
+    margin-top: 1rem;
     h1 {
         color: $orange-color;
         text-shadow: 2px 2px 3px rgb(46, 46, 46);
         height: fit-content;
         width: fit-content;
-        font-size: clamp(1.2rem, 3vw, 40px);
+        font-size: clamp(30px, 4vw, 50px);
         font-weight: 700;
     }
     .slogan-div {
@@ -113,3 +115,7 @@ header {
     .search:hover {
         transform: translateY(-1px);
     }
+
+    .checked-words {
+        align-self: center;
+}
