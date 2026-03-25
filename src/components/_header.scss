@@ -4,10 +4,12 @@
 body {
     @include make-flex-column;
     align-items: center;
+    min-height: 100dvh;
 }
 
 header {
     background-image: url('/img/header-1300x160.jpg');
+    background-repeat: no-repeat;
     max-width: 1300px;
     height: 190px;
     @include make-flex-column;
@@ -49,7 +51,7 @@ header {
         font-weight: 700;
     }
     .slogan-div {
-        width: 70%;
+        flex: 1;
         .slogan {
             font-size: clamp(1rem, 2vw, 20px);
             text-align: end;
@@ -63,10 +65,17 @@ header {
     max-width: 1300px;
     @include make-flex;
     justify-content: space-between;
-    gap: 1rem;
+    // gap: 1rem;
     align-items: center;
     background-color: $grey-color;
-
+    .header-menu-links {
+        @include make-flex;
+        padding: 0;
+        gap: 1rem;
+        .contact-link {
+            display: none;
+        }
+    }
     a {
         color: $blue-color;
         font-size: 1.5rem;
