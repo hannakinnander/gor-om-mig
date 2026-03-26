@@ -1,3 +1,53 @@
 @use "../general-mixins.scss" as *;
-@use "../variables" as *;
+@use "../variables.scss" as *;
+
+.upper-menu {
+    @include make-flex(1rem, 0);
+    justify-content: space-between;
+    padding-top: 1rem;
+    .upper-menu-links {
+        @include make-flex(0, 1rem);
+        .contact-link {
+            display: none;
+        }
+    }
+    a {
+        color: $blue-color;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover {
+        scale: 1.1;
+    }
+}
+.search {
+    flex: 1;
+    max-width: 400px;
+    @include rounded-blue-border;
+    @include make-flex(4px, 0);
+    justify-content: space-between;
+    background-color: white;
+    input {
+        @include rounded-no-border;
+        flex: 1;
+        outline: none;
+        background-color: white;
+        font-size: 1rem;
+    }
+    button {
+        @include rounded-no-border;
+        color: $blue-color;
+        background-color: white;
+        width: fit-content;
+    }
+    button:hover {
+        cursor: pointer;
+        color: $orange-color;
+    }
+}
+.search:hover {
+    transform: translateY(-1px);
+}
+
 
