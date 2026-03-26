@@ -2,15 +2,13 @@
 @use "./variables.scss" as *;
 
 
-@mixin common-device-styling {
-
-}
 @media (max-width: 1100px) {
     header {
-    max-width: 100dvw;
+        max-width: 100dvw;
     }
     .container {
         max-width: 100dvw;
+        
     }
     .main-content {
         max-width: 100dvw;
@@ -35,7 +33,6 @@
     }
 }
 
-
 @media (max-width: 720px) {
     .contact-information {
         display: none;
@@ -56,8 +53,11 @@
     .upper-menu .upper-menu-links .contact-link {
             display: block;
         }
-    .checked-words h3 {
-        font-size: 1rem;
+    .checked-words {
+        gap: 1rem;
+        h3 {
+            font-size: 1rem;
+        }
     }
 
     .main-content {
@@ -95,7 +95,13 @@
     }
     .product-menu:hover .all-products {
             display: block;
-       }
+    }
+    .article-type1 {
+        padding: 1rem;
+    }
+    .article-type2 {
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -108,11 +114,15 @@
         gap: 1rem;
         height: auto;
     }
-    .article-type1 {
-        padding: 1rem;
+    article h3 {
+        font-size: 24px;
     }
-    .article-type2 {
-        padding: 1rem;
+    
+    article .img-div {
+        overflow-x: hidden;
+    }
+    .slogan {
+        font-size: 2vw;
     }
        
 }

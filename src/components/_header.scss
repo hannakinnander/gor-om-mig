@@ -16,7 +16,8 @@ header {
     @include sideborder;
     background-image: url('/img/header-1300x160.jpg');
     background-repeat: no-repeat;
-    height: 160px;
+    background-size: cover;
+    min-height: 160px;
 }
 
 .contact-information {
@@ -37,7 +38,7 @@ header {
 }
 .logo-and-slogan-div {
     @include make-flex(1rem, 2rem);
-    height: 160px;
+    padding-bottom: 1rem;
     margin-top: 1rem;
     h1 {
         color: $orange-color;
@@ -50,7 +51,7 @@ header {
     .slogan-div {
          flex: 1;
         .slogan {
-            font-size: clamp(1rem, 2vw, 20px);
+            font-size: clamp(1rem, 2vw, 24px);
             text-align: end;
             font-style: italic;
             font-weight: 500;

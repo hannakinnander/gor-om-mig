@@ -67,7 +67,8 @@ header {
   border-right: 2px solid rgb(4, 12, 124);
   background-image: url("/img/header-1300x160.jpg");
   background-repeat: no-repeat;
-  height: 160px;
+  background-size: cover;
+  min-height: 160px;
 }
 
 .contact-information {
@@ -94,7 +95,7 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
   gap: 2rem;
-  height: 160px;
+  padding-bottom: 1rem;
   margin-top: 1rem;
 }
 .logo-and-slogan-div h1 {
@@ -109,7 +110,7 @@ header {
   flex: 1;
 }
 .logo-and-slogan-div .slogan-div .slogan {
-  font-size: clamp(1rem, 2vw, 20px);
+  font-size: clamp(1rem, 2vw, 24px);
   text-align: end;
   font-style: italic;
   font-weight: 500;
@@ -191,8 +192,8 @@ header {
 
 .checked-words {
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   gap: 2rem;
   width: 100%;
   flex-wrap: wrap;
@@ -270,6 +271,7 @@ article {
 article .text-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
   flex: 1;
 }
@@ -295,7 +297,7 @@ article img {
   border-radius: 5px;
   aspect-ratio: 16/9;
   width: 100%;
-  min-width: 200px;
+  min-width: 195px;
   flex: 1;
 }
 article {
@@ -360,6 +362,9 @@ article {
   .upper-menu .upper-menu-links .contact-link {
     display: block;
   }
+  .checked-words {
+    gap: 1rem;
+  }
   .checked-words h3 {
     font-size: 1rem;
   }
@@ -396,6 +401,12 @@ article {
   .product-menu:hover .all-products {
     display: block;
   }
+  .article-type1 {
+    padding: 1rem;
+  }
+  .article-type2 {
+    padding: 1rem;
+  }
 }
 @media (max-width: 500px) {
   .checked-words {
@@ -407,11 +418,14 @@ article {
     gap: 1rem;
     height: auto;
   }
-  .article-type1 {
-    padding: 1rem;
+  article h3 {
+    font-size: 24px;
   }
-  .article-type2 {
-    padding: 1rem;
+  article .img-div {
+    overflow-x: hidden;
+  }
+  .slogan {
+    font-size: 2vw;
   }
 }
 

@@ -10,7 +10,7 @@
     max-width: 1300px;
 }
 .checked-words {
-    @include make-flex(1rem, 2rem);
+    @include make-flex(2rem, 2rem);
     width: 100%;
     flex-wrap: wrap;
     gap: 2rem;
@@ -80,6 +80,7 @@ article {
     @include rounded-no-border;
     .text-content {
         @include make-flex-column;
+        justify-content: space-between;
         gap: 1rem;
         flex: 1;
     }
@@ -101,7 +102,7 @@ article {
         @include rounded-blue-border;
         aspect-ratio: 16 / 9;
         width: 100%;
-        min-width: 200px;
+        min-width: 195px;
         flex: 1;
     }
     padding: 2rem;
@@ -113,9 +114,7 @@ article {
 
 .article-type1 {
     @include make-flex-column;
-    // @include article-base;
 }
 .article-type2 {
     @include make-flex(2rem, 1rem);
-    // @include article-base;
 }
