@@ -1,0 +1,25 @@
+@use "../general-mixins.scss" as *;
+@use "../variables.scss" as *;
+
+footer {
+    background-color: $blue-color;
+    padding: 2rem;
+    @include make-flex-column;
+    align-items: center;
+
+    .footer-links {
+        @include make-flex(1rem, 1rem);
+        
+        a {
+            color: $orange-color;
+            font-size: 20px;
+        }
+        p {
+            font-size: 24px;
+        }
+
+    }
+            p {
+            color: white;
+        }
+}
