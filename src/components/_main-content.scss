@@ -107,6 +107,7 @@ article {
         @include rounded-blue-border;
         aspect-ratio: 16 / 9;
         width: 100%;
+        height: auto;
         min-width: 195px;
         flex: 1;
     }
