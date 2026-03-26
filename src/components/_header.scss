@@ -9,11 +9,10 @@ body {
 
 header {
     max-width: 1300px;
-    @include make-flex-column;
-    @include sideborder;
 }
 .header-img {
     @include make-flex-column;
+    @include sideborder;
     background-image: url('/img/header-1300x160.jpg');
     background-repeat: no-repeat;
     height: 160px;
@@ -21,9 +20,7 @@ header {
 
 .contact-information {
     @include make-flex;
-    @include rounded-no-border;
     align-self: flex-end;
-    flex-wrap: wrap;
     background-color: $blue-color-transparent;
     color: white;
     padding: 4px;
@@ -60,62 +57,4 @@ header {
             font-weight: 500;
         }
     }
-}
-.header-menu {
-    height: 50px;
-    max-width: 1300px;
-    @include make-flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $grey-color;
-    .header-menu-links {
-        @include make-flex;
-        padding: 0;
-        gap: 1rem;
-        .contact-link {
-            display: none;
-        }
-    }
-    a {
-        color: $blue-color;
-        font-size: 1.5rem;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    a:hover {
-        scale: 1.1;
-    }
-    }
-    .search {
-        flex: 1;
-        max-width: 400px;
-        @include rounded-blue-border;
-        @include make-flex;
-        justify-content: space-between;
-        background-color: white;
-        input {
-            @include rounded-no-border;
-            flex: 1;
-            outline: none;
-            background-color: white;
-            font-size: 1rem;
-        }
-        button {
-            @include rounded-no-border;
-            color: $blue-color;
-            background-color: white;
-            width: fit-content;
-            height: 30px;
-        }
-        button:hover {
-            cursor: pointer;
-            color: $orange-color;
-        }
-    }
-    .search:hover {
-        transform: translateY(-1px);
-    }
-
-    .checked-words {
-        align-self: center;
 }

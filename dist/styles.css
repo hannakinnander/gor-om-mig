@@ -14,15 +14,13 @@ body {
 
 header {
   max-width: 1300px;
-  display: flex;
-  flex-direction: column;
-  border-left: 2px solid rgb(4, 12, 124);
-  border-right: 2px solid rgb(4, 12, 124);
 }
 
 .header-img {
   display: flex;
   flex-direction: column;
+  border-left: 2px solid rgb(4, 12, 124);
+  border-right: 2px solid rgb(4, 12, 124);
   background-image: url("/img/header-1300x160.jpg");
   background-repeat: no-repeat;
   height: 160px;
@@ -32,10 +30,7 @@ header {
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
-  border: none;
-  border-radius: 5px;
   align-self: flex-end;
-  flex-wrap: wrap;
   background-color: rgba(4, 12, 124, 0.363);
   color: white;
   padding: 4px;
@@ -76,77 +71,8 @@ header {
   font-weight: 500;
 }
 
-.header-menu {
-  height: 50px;
-  max-width: 1300px;
-  display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(237, 240, 247);
-}
-.header-menu .header-menu-links {
-  display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding: 0;
-  gap: 1rem;
-}
-.header-menu .header-menu-links .contact-link {
-  display: none;
-}
-.header-menu a {
-  color: rgb(4, 12, 124);
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-.header-menu a:hover {
-  scale: 1.1;
-}
-
-.search {
-  flex: 1;
-  max-width: 400px;
-  border: 1px solid rgb(4, 12, 124);
-  border-radius: 5px;
-  display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  justify-content: space-between;
-  background-color: white;
-}
-.search input {
-  border: none;
-  border-radius: 5px;
-  flex: 1;
-  outline: none;
-  background-color: white;
-  font-size: 1rem;
-}
-.search button {
-  border: none;
-  border-radius: 5px;
-  color: rgb(4, 12, 124);
-  background-color: white;
-  width: fit-content;
-  height: 30px;
-}
-.search button:hover {
-  cursor: pointer;
-  color: #f3962b;
-}
-
-.search:hover {
-  transform: translateY(-1px);
-}
-
-.checked-words {
-  align-self: center;
-}
-
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -175,6 +101,7 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
   gap: 1rem;
+  width: 100%;
   max-width: 1300px;
 }
 
@@ -224,6 +151,7 @@ header {
 
 main {
   flex: 1;
+  min-width: 0;
 }
 
 .article-type1 {
@@ -235,24 +163,34 @@ main {
 }
 .article-type1 h3 {
   font-size: 30px;
+  color: rgb(4, 12, 124);
 }
 .article-type1 a {
   text-decoration: none;
   font-weight: 600;
   color: #f3962b;
 }
+.article-type1 .img-div {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 0;
+  gap: 1rem;
+  flex: 1;
+}
 .article-type1 img {
   border: 1px solid rgb(4, 12, 124);
   border-radius: 5px;
   aspect-ratio: 16/9;
-  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  flex: 1;
 }
 .article-type1 {
   padding: 2rem;
   margin-bottom: 1rem;
   gap: 1rem;
   background-color: white;
-  max-width: 70%;
   height: fit-content;
   justify-content: space-between;
 }
@@ -268,28 +206,35 @@ main {
 }
 .article-type2 h3 {
   font-size: 30px;
+  color: rgb(4, 12, 124);
 }
 .article-type2 a {
   text-decoration: none;
   font-weight: 600;
   color: #f3962b;
 }
+.article-type2 .img-div {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 0;
+  gap: 1rem;
+  flex: 1;
+}
 .article-type2 img {
   border: 1px solid rgb(4, 12, 124);
   border-radius: 5px;
   aspect-ratio: 16/9;
-  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  flex: 1;
 }
 .article-type2 {
   padding: 2rem;
   margin-bottom: 1rem;
   gap: 1rem;
   background-color: white;
-  max-width: 70%;
   height: fit-content;
-}
-.article-type2 img {
-  max-width: 33%;
 }
 
 .article-type3 {
@@ -301,24 +246,34 @@ main {
 }
 .article-type3 h3 {
   font-size: 30px;
+  color: rgb(4, 12, 124);
 }
 .article-type3 a {
   text-decoration: none;
   font-weight: 600;
   color: #f3962b;
 }
+.article-type3 .img-div {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 0;
+  gap: 1rem;
+  flex: 1;
+}
 .article-type3 img {
   border: 1px solid rgb(4, 12, 124);
   border-radius: 5px;
   aspect-ratio: 16/9;
-  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  flex: 1;
 }
 .article-type3 {
   padding: 2rem;
   margin-bottom: 1rem;
   gap: 1rem;
   background-color: white;
-  max-width: 70%;
   height: fit-content;
 }
 .article-type3 .text-content {
@@ -429,7 +384,6 @@ main {
   }
 }
 .upper-menu {
-  max-width: 1300px;
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -481,7 +435,6 @@ main {
   color: rgb(4, 12, 124);
   background-color: white;
   width: fit-content;
-  height: 30px;
 }
 .search button:hover {
   cursor: pointer;

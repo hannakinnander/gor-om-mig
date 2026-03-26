@@ -2,6 +2,7 @@
 @use "../variables.scss" as *;
 
 .container {
+    width: 100%;
     @include make-flex-column;
     gap: 1rem;
     @include sideborder;
@@ -22,6 +23,7 @@
 .main-content {
     @include make-flex;
     gap: 1rem;
+    width: 100%;
     max-width: 1300px;
     // min-height: 100dvh;
     // padding-top: 1rem;
@@ -74,6 +76,7 @@
 }
 main {
     flex: 1;
+    min-width: 0;
 }
 
 .article-type1 {
@@ -91,9 +94,9 @@ main {
     @include make-flex-column;
     @include article-base;
  
-    img {
-        max-width: 33%;
-    }
+    // img {
+    //     max-width: 33%;
+    // }
 }
 
 .article-type3 {

@@ -18,6 +18,7 @@
     padding-right: 1rem;
 }
 
+
 @mixin make-flex-column {
     display: flex;
     flex-direction: column;
@@ -35,24 +36,35 @@
 
 @mixin article-base {
     @include rounded-no-border;
+    
     h3 {
         font-size: 30px;
+        color: $blue-color;
     }
     a {
         text-decoration: none;
         font-weight: 600;
         color: $orange-color;
     }
+    .img-div {
+        @include make-flex;
+        padding: 0;
+        gap: 1rem;
+        flex: 1;
+        
+    }
     img {
         @include rounded-blue-border;
         aspect-ratio: 16 / 9;
-        overflow: hidden;
+        width: 100%;
+        min-width: 0;
+        flex: 1;
     }
     padding: 2rem;
     margin-bottom: 1rem;
     gap: 1rem;
     background-color: white;
-    max-width: 70%;
+    // max-width: 70%;
     height: fit-content;
 }
 

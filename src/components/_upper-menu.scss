@@ -2,8 +2,7 @@
 @use "../variables" as *;
 
 .upper-menu {
-    // height: 50px;
-    max-width: 1300px;
+    // max-width: 1300px;
     @include make-flex;
     justify-content: space-between;
     padding-top: 1rem;
@@ -44,7 +43,6 @@
         color: $blue-color;
         background-color: white;
         width: fit-content;
-        height: 30px;
     }
     button:hover {
         cursor: pointer;
