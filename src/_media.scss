@@ -3,8 +3,11 @@
 
 
 @mixin common-device-styling {
+
+}
+@media (max-width: 1100px) {
     header {
-        max-width: 100dvw;
+    max-width: 100dvw;
     }
     .container {
         max-width: 100dvw;
@@ -13,23 +16,12 @@
         max-width: 100dvw;
     }
     article {
-    flex-direction: column;
-    .text-content {
-        flex: 0;
-    }
-    .img-div {
-        flex: 1;
-    }
-    }
-}
-@media (max-width: 1100px) {
-    @include common-device-styling;
-    .checked-words {
-        gap: 1rem; 
-        h3 {
-            font-size: 20px;
+        flex-direction: column;
+        .text-content {
+            flex: 0;
         }
     }
+
     .main-content .product-menu {
         width: 200px;
     }
@@ -95,23 +87,32 @@
 
         h2 {
             font-size: 1rem;
-            
         }
         h2:hover {
             cursor: pointer;
         }
-       &:hover .all-products {
+
+    }
+    .product-menu:hover .all-products {
             display: block;
        }
-    }
 }
 
 @media (max-width: 500px) {
+    .checked-words {
+        gap: 1rem;
+    }
     .upper-menu {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         height: auto;
     }
-       
+    .article-type1 {
+        padding: 1rem;
     }
+    .article-type2 {
+        padding: 1rem;
+    }
+       
+}

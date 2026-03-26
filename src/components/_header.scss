@@ -1,10 +1,11 @@
 @use "../general-mixins.scss" as *;
-@use "../variables" as *;
+@use "../variables.scss" as *;
 
 body {
     @include make-flex-column;
     align-items: center;
     min-height: 100dvh;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,14 +20,13 @@ header {
 }
 
 .contact-information {
-    @include make-flex;
+    @include make-flex(0, 4px);
     align-self: flex-end;
     background-color: $blue-color-transparent;
     color: white;
     padding: 4px;
     width: fit-content;
     font-size: small;
-    gap: 4px;
 
     a {
         color: white;
@@ -36,8 +36,7 @@ header {
     }
 }
 .logo-and-slogan-div {
-    @include make-flex;
-    gap: 2rem;
+    @include make-flex(1rem, 2rem);
     height: 160px;
     margin-top: 1rem;
     h1 {
