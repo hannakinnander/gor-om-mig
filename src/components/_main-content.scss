@@ -98,18 +98,21 @@ article {
         font-weight: 600;
         color: $orange-color;
     }
-    .img-div {
+    .img-content {
         @include make-flex(0, 5px);
         flex-wrap: wrap;
+    }
+    .img-div {
+        aspect-ratio: 16 / 9;
         flex: 1;
+        @include rounded-blue-border;
+        min-width: 195px;
     }
     img {
-        @include rounded-blue-border;
-        aspect-ratio: 16 / 9;
-        max-width: 100%;
-        
-        min-width: 195px;
-        flex: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     padding: 2rem;
     margin-bottom: 1rem;
@@ -164,6 +167,7 @@ article {
             font-weight: 800;
         }
         img {
+            @include rounded-blue-border;
             min-width: 180px;
             width: 100%;
         }
