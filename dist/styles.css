@@ -10,22 +10,16 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100dvh;
-  overflow-x: hidden;
 }
 
 header {
-  max-width: 1300px;
-}
-
-.header-img {
-  display: flex;
-  flex-direction: column;
-  border-left: 2px solid rgb(4, 12, 124);
-  border-right: 2px solid rgb(4, 12, 124);
+  max-width: 100dvw;
+  min-height: 160px;
   background-image: url("/img/header-1300x160.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 160px;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-information {
