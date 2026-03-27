@@ -259,8 +259,7 @@ article img {
   border: 1px solid rgb(4, 12, 124);
   border-radius: 5px;
   aspect-ratio: 16/9;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
   min-width: 195px;
   flex: 1;
 }
