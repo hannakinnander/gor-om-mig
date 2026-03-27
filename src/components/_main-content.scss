@@ -95,6 +95,7 @@ article {
         aspect-ratio: 16 / 9;
         flex: 1;
         @include rounded-blue-border;
+        overflow: hidden;
         min-width: 195px;
     }
     img {
