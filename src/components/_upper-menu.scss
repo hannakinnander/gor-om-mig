@@ -3,8 +3,8 @@
 
 .upper-menu {
     @include make-flex(1rem, 0);
+    max-width: 100dvw;
     justify-content: space-between;
-    padding-top: 1rem;
     .upper-menu-links {
         @include make-flex(0, 1rem);
         .contact-link {

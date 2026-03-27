@@ -1,17 +1,9 @@
 @use "../general-mixins.scss" as *;
 @use "../variables.scss" as *;
 
-.container {
-    width: 100%;
-    @include make-flex-column;
-    gap: 1rem;
-    @include sideborder;
-    background-color: $grey-color;
-    max-width: 1300px;
-}
 .checked-words {
     @include make-flex(2rem, 2rem);
-    width: 100%;
+    max-width: 100dvw;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
@@ -25,9 +17,8 @@
 }
 .main-content {
     @include make-flex(1rem, 1rem);
-    width: 100%;
+    max-width: 100dvw;
 }
-
 .product-menu {
     background-color: white;
     @include rounded-blue-border;
