@@ -34,6 +34,18 @@
     border-radius: 5px;
 }
 
+@mixin jumping-links ($background-color){
+    font-weight: 700;
+    text-decoration: none;
+    padding: 4px;
+        &:hover {
+            transform: translateY(-2px);
+            background-color: $background-color;
+            @include rounded-no-border;
+            
+        }
+}
+
 
 
 

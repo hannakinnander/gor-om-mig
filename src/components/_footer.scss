@@ -2,24 +2,27 @@
 @use "../variables.scss" as *;
 
 footer {
+    max-width: 100dvw;
     background-color: $blue-color;
     padding: 2rem;
     @include make-flex-column;
+    gap: 1rem;
     align-items: center;
 
     .footer-links {
         @include make-flex(1rem, 1rem);
-        
+        justify-content: center;
+        flex-wrap: wrap;
         a {
             color: $orange-color;
-            font-size: 20px;
+            font-size: clamp(1rem, 24px, 1.5rem);
+            @include jumping-links($blue-color);
         }
         p {
             font-size: 24px;
         }
-
     }
-            p {
-            color: white;
-        }
+    p {
+        color: white;
+    }
 }

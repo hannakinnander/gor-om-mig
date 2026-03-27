@@ -3,23 +3,14 @@
 
 
 @media (max-width: 1100px) {
-    header {
-        max-width: 100dvw;
-    }
-    .container {
-        max-width: 100dvw;
-        
-    }
-    .main-content {
-        max-width: 100dvw;
-    }
+
+    //Alla artiklar ska ha flex-direction column och texten ska inte ta upp halva innehållet.
     article {
         flex-direction: column;
         .text-content {
             flex: 0;
         }
     }
-
     .main-content .product-menu {
         width: 200px;
     }
@@ -33,6 +24,7 @@
     }
 }
 
+//Vid smalare skärm gömmer sig kontaktuppgifterna i headern
 @media (max-width: 720px) {
     .contact-information {
         display: none;
@@ -41,7 +33,6 @@
         flex-direction: column;
         gap: 5px;
     }
-
     .upper-menu {
         .search {
             flex: 0;
@@ -50,6 +41,7 @@
             font-size: 1rem;
         }
     }
+    //"contacts" i upper menu visar sig istället som länk
     .upper-menu .upper-menu-links .contact-link {
             display: block;
         }
@@ -73,6 +65,7 @@
         padding: 0;
     }
 
+    //Gömmer sidomenyn och lägger den som dropdown till "products"
     .product-menu {
         background-color: $grey-color;
         position: relative;
@@ -87,17 +80,15 @@
             position: absolute;
             display: none;
         }
-
         h2 {
             font-size: 1rem;
         }
         h2:hover {
             cursor: pointer;
         }
-
     }
     .product-menu:hover .all-products {
-            display: block;
+        display: block;
     }
     .article-type1 {
         padding: 1rem;
@@ -107,6 +98,7 @@
     }
 }
 
+//Gör så sökrutan hamnar under länkarna i övre menyn
 @media (max-width: 500px) {
     .checked-words {
         gap: 1rem;
@@ -124,8 +116,4 @@
     article .img-div {
         overflow-x: hidden;
     }
-    .slogan {
-        font-size: 2vw;
-    }
-       
 }

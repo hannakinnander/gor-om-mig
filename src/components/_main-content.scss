@@ -85,9 +85,8 @@ article {
         font-weight: 500;
     }
     a {
-        text-decoration: none;
-        font-weight: 600;
         color: $orange-color;
+        @include jumping-links(white);
     }
     .img-content {
         @include make-flex(0, 5px);
@@ -130,6 +129,7 @@ article {
     }
     .read-more {
         font-weight: 600;
+        font-style: italic;
         &:hover {
             cursor: pointer;
         }
