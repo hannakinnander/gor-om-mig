@@ -7,11 +7,6 @@
     font-family: "Quicksand", sans-serif;
 }
 
-@mixin sideborder {
-    border-left: 2px solid $blue-color;
-    border-right: 2px solid $blue-color;
-}
-
 @mixin make-flex ($side-padding, $gap){
     display: flex;
     padding-left: $side-padding;
@@ -19,9 +14,10 @@
     gap: $gap;
 }
 
-@mixin make-flex-column {
+@mixin make-flex-column($gap) {
     display: flex;
     flex-direction: column;
+    gap: $gap;
 }
 
 @mixin rounded-no-border {
@@ -37,12 +33,10 @@
 @mixin jumping-links ($background-color){
     font-weight: 700;
     text-decoration: none;
-    padding: 4px;
         &:hover {
             transform: translateY(-2px);
             background-color: $background-color;
             @include rounded-no-border;
-            
         }
 }
 

@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: space-between;
   min-height: 100dvh;
   background-color: rgb(237, 240, 247);
 }
@@ -21,6 +22,7 @@ header {
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
+  gap: 0;
 }
 
 .contact-information {
@@ -90,9 +92,9 @@ header {
 .upper-menu a {
   color: rgb(4, 12, 124);
   font-size: 1.5rem;
+  padding: 4px;
   font-weight: 700;
   text-decoration: none;
-  padding: 4px;
 }
 .upper-menu a:hover {
   transform: translateY(-2px);
@@ -145,7 +147,6 @@ header {
   gap: 2rem;
   max-width: 100dvw;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
 }
 .checked-words h3 {
@@ -161,6 +162,7 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
   gap: 1rem;
+  flex: 1;
   max-width: 100dvw;
 }
 
@@ -220,8 +222,8 @@ article {
 article .text-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 1rem;
+  justify-content: space-between;
   flex: 1;
 }
 article h3 {
@@ -236,7 +238,6 @@ article a {
   color: #f3962b;
   font-weight: 700;
   text-decoration: none;
-  padding: 4px;
 }
 article a:hover {
   transform: translateY(-2px);
@@ -267,13 +268,13 @@ article img {
 article {
   padding: 2rem;
   margin-bottom: 1rem;
-  gap: 1rem;
   background-color: white;
 }
 
 .article-type1 {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .article-type2 {
@@ -286,6 +287,7 @@ article {
 .article-type3 {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 .article-type3 .quote {
   font-style: italic;
@@ -319,6 +321,7 @@ article {
 }
 .article-type3 .product-card {
   flex: 1;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -334,7 +337,7 @@ article {
 .article-type3 .product-card img {
   border: 1px solid rgb(4, 12, 124);
   border-radius: 5px;
-  min-width: 180px;
+  min-width: 170px;
   width: 100%;
 }
 .article-type3 .product-card:hover {
@@ -361,10 +364,9 @@ footer .footer-links {
 }
 footer .footer-links a {
   color: #f3962b;
-  font-size: clamp(1rem, 24px, 1.5rem);
+  font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
-  padding: 4px;
 }
 footer .footer-links a:hover {
   transform: translateY(-2px);
@@ -376,6 +378,7 @@ footer .footer-links p {
   font-size: 24px;
 }
 footer p {
+  text-align: center;
   color: white;
 }
 
@@ -394,6 +397,12 @@ footer p {
   }
   .all-products .dropdown-content a {
     font-size: small;
+  }
+  .article-type3 .product-card {
+    max-width: 100%;
+  }
+  .article-type3 .product-card img {
+    min-width: 130px;
   }
 }
 @media (max-width: 720px) {
@@ -455,11 +464,11 @@ footer p {
   .product-menu:hover .all-products {
     display: block;
   }
-  .article-type1 {
+  .article-type1, .article-type2, .article-type3 {
     padding: 1rem;
   }
-  .article-type2 {
-    padding: 1rem;
+  footer .footer-links a {
+    font-size: 1rem;
   }
 }
 @media (max-width: 500px) {

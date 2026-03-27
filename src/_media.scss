@@ -22,6 +22,13 @@
             font-size: small;
         }
     }
+    //Bilder på produktsidor får fylla hela artikelns bredd
+    .article-type3 .product-card {
+        max-width: 100%;
+        img {
+            min-width: 130px;
+        }
+    }
 }
 
 //Vid smalare skärm gömmer sig kontaktuppgifterna i headern
@@ -51,7 +58,7 @@
             font-size: 1rem;
         }
     }
-
+    //main-sektionen med artiklar får ta upp hela sidans bredd, produktmenyn lägger sig ovanpå
     .main-content {
         flex-direction: column;
         gap: 1rem;
@@ -90,11 +97,13 @@
     .product-menu:hover .all-products {
         display: block;
     }
-    .article-type1 {
+
+    .article-type1, .article-type2, .article-type3 {
         padding: 1rem;
     }
-    .article-type2 {
-        padding: 1rem;
+
+    footer .footer-links a {
+        font-size: 1rem;
     }
 }
 
