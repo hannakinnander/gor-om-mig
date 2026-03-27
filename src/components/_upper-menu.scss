@@ -3,8 +3,9 @@
 
 .upper-menu {
     @include make-flex(1rem, 0);
+    max-width: 100dvw;
+    min-height: 40px;
     justify-content: space-between;
-    padding-top: 1rem;
     .upper-menu-links {
         @include make-flex(0, 1rem);
         .contact-link {
@@ -14,16 +15,14 @@
     a {
         color: $blue-color;
         font-size: 1.5rem;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    a:hover {
-        scale: 1.1;
+        padding: 4px;
+        @include jumping-links($orange-color);
     }
 }
 .search {
     flex: 1;
     max-width: 400px;
+    height: 30px;
     @include rounded-blue-border;
     @include make-flex(4px, 0);
     justify-content: space-between;

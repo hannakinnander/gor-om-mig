@@ -1,0 +1,28 @@
+@use "../general-mixins.scss" as *;
+@use "../variables.scss" as *;
+
+footer {
+    max-width: 100dvw;
+    background-color: $blue-color;
+    padding: 2rem;
+    @include make-flex-column(1rem);
+    align-items: center;
+
+    .footer-links {
+        @include make-flex(1rem, 1rem);
+        justify-content: center;
+        flex-wrap: wrap;
+        a {
+            color: $orange-color;
+            font-size: 1.5rem;
+            @include jumping-links($blue-color);
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+    p {
+        text-align: center;
+        color: white;
+    }
+}

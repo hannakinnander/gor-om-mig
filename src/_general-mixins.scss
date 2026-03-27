@@ -7,11 +7,6 @@
     font-family: "Quicksand", sans-serif;
 }
 
-@mixin sideborder {
-    border-left: 2px solid $blue-color;
-    border-right: 2px solid $blue-color;
-}
-
 @mixin make-flex ($side-padding, $gap){
     display: flex;
     padding-left: $side-padding;
@@ -19,9 +14,10 @@
     gap: $gap;
 }
 
-@mixin make-flex-column {
+@mixin make-flex-column($gap) {
     display: flex;
     flex-direction: column;
+    gap: $gap;
 }
 
 @mixin rounded-no-border {
@@ -34,41 +30,16 @@
     border-radius: 5px;
 }
 
-article {
-    @include rounded-no-border;
-    .text-content {
-        @include make-flex-column;
-        gap: 1rem;
-        flex: 1;
-    }
-    h3 {
-        font-size: 30px;
-        color: $blue-color;
-    }
-    a {
-        text-decoration: none;
-        font-weight: 600;
-        color: $orange-color;
-    }
-    .img-div {
-        @include make-flex(0, 5px);
-        flex-wrap: wrap;
-        flex: 1;
-    }
-    img {
-        @include rounded-blue-border;
-        aspect-ratio: 16 / 9;
-        width: 100%;
-        min-width: 200px;
-        
-        flex: 1;
-    }
-    padding: 2rem;
-    margin-bottom: 1rem;
-    gap: 1rem;
-    background-color: white;
-    // max-width: 70%;
-    height: fit-content;
+@mixin jumping-links ($background-color){
+    font-weight: 700;
+    text-decoration: none;
+        &:hover {
+            transform: translateY(-2px);
+            background-color: $background-color;
+            @include rounded-no-border;
+        }
 }
+
+
 
 

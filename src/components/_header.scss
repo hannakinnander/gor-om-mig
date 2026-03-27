@@ -2,24 +2,22 @@
 @use "../variables.scss" as *;
 
 body {
-    @include make-flex-column;
-    align-items: center;
+    @include make-flex-column(1rem);
+    justify-content: space-between;
     min-height: 100dvh;
-    overflow-x: hidden;
+    background-color: $grey-color;
 }
 
 header {
-    max-width: 1300px;
-}
-.header-img {
-    @include make-flex-column;
-    @include sideborder;
+    max-width: 100dvw;
+    min-height: 160px;
     background-image: url('/img/header-1300x160.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 160px;
+    background-size: 100% 100%;
+    @include make-flex-column(0);
 }
 
+//Kontaktuppgifterna högst upp i headern
 .contact-information {
     @include make-flex(0, 4px);
     align-self: flex-end;
@@ -51,6 +49,7 @@ header {
     .slogan-div {
          flex: 1;
         .slogan {
+            color: $blue-color;
             font-size: clamp(1rem, 2vw, 24px);
             text-align: end;
             font-style: italic;
