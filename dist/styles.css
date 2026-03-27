@@ -17,7 +17,7 @@ body {
 header {
   max-width: 100dvw;
   min-height: 160px;
-  background-image: url("./img/header-1300x160.jpg");
+  background-image: url("/gor-om-mig/img/header-1300x160.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
